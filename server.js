@@ -28,7 +28,8 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 // routes
 app.use("/", require("./routes/root.route"));
-
+app.use("/register", require("./routes/register.route"));
+app.use("/auth", require("./routes/auth.route"));
 app.use("/employees", require("./routes/api/employees.route"));
 
 // Route handlers
