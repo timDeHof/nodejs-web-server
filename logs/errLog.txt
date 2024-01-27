@@ -2,3 +2,5 @@
 20240122	10:30:15	09cb694b-1a8e-4ce1-88e9-383af01f4981	Error: ENOENT: no such file or directory, stat '/Users/timothydehof/Dev/nodejs_web_server/routes/views/index.html'
 20240122	10:30:36	06834c54-a669-4f20-907a-08a393b5ff36	Error: ENOENT: no such file or directory, stat '/Users/timothydehof/Dev/nodejs_web_server/routes/views/new-page.html'
 20240122	16:40:37	7ea08835-9672-477c-a989-bea5e4c6ad2d	SyntaxError: Expected ',' or '}' after property value in JSON at position 28
+20240122	19:31:50	c4f8c082-9209-4996-93cc-20a86eed797a	TypeError: Cannot read properties of undefined (reading 'username')
+20240122	19:33:49	b3d9cae0-075a-4e28-bc67-052b0f344a8b	TypeError: Cannot read properties of undefined (reading 'user')
