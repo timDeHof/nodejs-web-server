@@ -40,10 +40,6 @@ app.use("/auth", require("./routes/auth.route"));
 app.use("/refresh", require("./routes/refresh.route"));
 app.use("/logout", require("./routes/logout.route"));
 
-app.use(verifyJWT);
-app.use("/employees", require("./routes/api/employees.route"));
-
-// Route handlers
 app.get(
   "/hello(.html)?",
   (req, res, next) => {
@@ -51,9 +47,13 @@ app.get(
     next();
   },
   (req, res) => {
-    res.send("Hello World!");
+    res.json({ message: "Hello World!" });
   },
 );
+app.use(verifyJWT);
+app.use("/employees", require("./routes/api/employees.route"));
+
+// Route handlers
 
 // app.use('/')
 app.all("*", (req, res) => {

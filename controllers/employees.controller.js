@@ -23,6 +23,7 @@ const createNewEmployee = (req, res) => {
   }
 
   data.setEmployees([...data.employees, newEmployee]);
+  console.log(data.employees);
   res.status(201).json(data.employees);
 };
 
