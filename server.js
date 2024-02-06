@@ -59,6 +59,8 @@ app.get(
 app.use(verifyJWT);
 app.use("/employees", require("./routes/api/employees.route"));
 
+app.use("/users", require("./routes/api/users.route"));
+
 // Route handlers
 
 // app.use('/')
